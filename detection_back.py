@@ -11,7 +11,7 @@ import detection_func
 
 
 def combine(vertices, size):
-    template = Image.open("origin.png")
+    template = Image.open("origin.jpg")
     rgb_im = template.convert('RGB')
     logo = Image.open('results/output_cv_out_0.png')
     resized_logo = logo.resize(size)

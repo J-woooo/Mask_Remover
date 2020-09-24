@@ -14,7 +14,7 @@ def detect_face():
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'calcium-circuit-288507-3bd5d45e277c.json'
 
     client = vision.ImageAnnotatorClient()
-    file_name = 'origin.png'
+    file_name = 'origin.jpg'
     img = cv2.imread(file_name)
 
     with io.open(file_name, 'rb') as image_file:
@@ -44,7 +44,7 @@ def detect_face_only_plot():
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'calcium-circuit-288507-3bd5d45e277c.json'
 
     client = vision.ImageAnnotatorClient()
-    file_name = 'origin.png'
+    file_name = 'origin.jpg'
     img = cv2.imread(file_name)
 
     with io.open(file_name, 'rb') as image_file:
