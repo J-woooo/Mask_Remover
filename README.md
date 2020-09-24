@@ -1,5 +1,5 @@
 # Mask_Remover
-
+<img src="./main.png">
 ### Description: Guess the face without the mask.
 ---
 ### dataset: http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
