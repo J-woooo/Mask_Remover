@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "calcium-circuit-288507",
+  "private_key_id": "3bd5d45e277c18a8ddbf1416143096d98afcdff6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDAg5Brutr2HEZJ\nPl3J9LUvccWK4UFYL6m5U1afL9tY0iwYKMp1boYkUf6PHG6lRHxjLaM2mPDqofec\nP5HhIGu2pUVxuk/m2ejtgI4BkQL9wRbb1ntlAmR4plyPxrfjqv5LlC4SeuAdZ5pt\n5ljHMVdHrS8Ryc/Wt4+bHu2fnVmsYt+l1+QSrVjYOxhJT4RDkKt3vC9GjKdfzBs/\n/cl+/nfyMWrOK6My23/H+ne9/M5eJM5zT8WrINGiAgRpbsmLBbeR2jNTbJpNiSYP\n0J1uTsNCupe/0n38eIkxaMYxG/C7QY6yla94PMQANEjdnLK5VKSimu9OdCmGWknS\nyOUqOWUTAgMBAAECggEAHwVUK+J+eUfnFNL63pm9lGPl1qd4wGgLFkoqhsN5ud9B\nVwdDpcE7K6EWvs1wZYBv9rSaPH2lMc8K4jTldyb36a90ouBzEu+BdrvPUMtNdcGR\nGGLVnATTAb9KN6oSuZnfw3f2JejXh4Vz6fTt0J3Pwu9SIAX/+p5g1+MXm9pet8XT\nJX3SjwdYaNaSESI5BVaMHcdmXjun8iFPq06WwZYdv5YeTcu0gXP3gJBd/56Hvshk\noZaAV/bx8G2tozX4xHtd9Ht0tHLUNbj3MJwMIJXl73K+M3DA4r5VZgo0kqMkzYU3\nlsCoiYz7O47s9J3bdXixGZbxKdi9mlXTB7IeO6h5YQKBgQDvTaNsSAb4ll65FLQw\ne7ZitEAQtbjzdJf9uiQO4fuOLEuMohgs2dTrphcxgriN03qdtA/uOlo3W14M+Hkk\noVuTzYE5ERSrcUGDraZb6DW9z62IOJpOBKXz/n3oveNpY5EgQ/n/5JwvRWXYv+Sb\nqtNxZTG1+piNTnZ8+Q0KO5f7EQKBgQDN8jBQNWV2XooIimg429zNbBbXnooA+ufr\nqsGXP6K20wQRSrWNBqpS9TrQQXnPLAe0Z2sr0H/FVhNW18tHQ6mcqe4sIGZ6bjn9\nBnYQ5Ve0ptKlklCwErvM33iZaFXJKKCnzgJd0hXgHcPdPSgwkz2C/PWjOnR1iv79\nkEtNi0d14wKBgEWi4x58a0LlhxT2uGSva2iXqVjzeKmn0R7tjtah3jEGJMn81Wof\nzXzxbShkMM5crv67SjN52YzoUpsVpzMInXyKPcNcfBZTs8vcuV9fWFwu1gGg7w4q\n/hvdf8g9kbK2XaH1Bgf3/5cl67hCRwUhlbwWxXt+O+xK2+IMG0ZSByzxAoGAftw7\nKo1ZzMp7mLs5bBzzLI7ymyuLswLbre3nhnWqk5f0n3o3z4FVlfh9nB9ZG2bx8Azs\nlXa/3h0hmJMhIurpJhn/HqtutOgFTHmYbNv5ZMyGYXt5vJwtlwvpTAZbIainHfbm\nukhZNU7ggf3ULeflMjUEUuIFLwrJ/APQfxnWkSUCgYA60hsN45QtgS9EYWIeCO5d\nkvV6YM5xzPo8gXxjmOtRvg57bd2mXpa34KTgi0WFG2O5DUkzuCbufwHgcUk5IiSU\naeSmXz11kq/JCuygHO6PklR2URMMHziz+aaAd8s+yzmaBfAzC+nHDjc0Rp8pMGnm\npk0d+Qz9diG+3DO7Ys4qIA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "face-detection-api@calcium-circuit-288507.iam.gserviceaccount.com",
+  "client_id": "107818182556707054178",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/face-detection-api%40calcium-circuit-288507.iam.gserviceaccount.com"
+}
