@@ -10,11 +10,11 @@ from PIL import Image, ImageDraw
 import detection_func
 
 
-def combine(size):
-    template = Image.open("origin.jpg")
+def combine(vertices, size):
+    template = Image.open("origin.png")
     rgb_im = template.convert('RGB')
     logo = Image.open('results/output_cv_out_0.png')
     resized_logo = logo.resize(size)
     rgb_im.paste(resized_logo, (vertices[0].x, vertices[0].y))
-    rgb_im.save("origin.jpg", "JPEG")
+    rgb_im.save("result.jpg", "JPEG")
     # rgb_im.show()
