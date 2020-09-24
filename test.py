@@ -13,7 +13,6 @@ def inpainting():
     # create a model
     model = create_model(opt)
     model.eval()
-
     for i, data in enumerate(islice(dataset, opt.how_many)):
         model.set_input(data)
         model.test()

@@ -49,30 +49,28 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = r'calcium-circuit-288507-3bd5d45e
 
 client = vision.ImageAnnotatorClient()
 
-file_name = 'origin.jpeg'
-
+file_name = 'origin.jpg'
+img = cv2.imread(file_name)
 with io.open(file_name, 'rb') as image_file:
     content = image_file.read()
 image = vision.types.Image(content=content)
 response = client.face_detection(image=image)
 faceAnnotations = response.face_annotations
 
-print('Faces:')
 for face in faceAnnotations:
     vertices = face.bounding_poly.vertices
     face_vertices = ['({0},{1})'.format(vertex.x, vertex.y) for vertex in face.bounding_poly.vertices]
-    print('Face bound: {0}'.format(', '.join(face_vertices)))
-    print('')
-    drawVertices(content, vertices, display_text='face')
-    cropped_img = crop(file_name, vertices)
+    index = [face_vertices[0].split(',')[0][1:],face_vertices[0].split(',')[1][:-1],face_vertices[2].split(',')[0][1:],face_vertices[2].split(',')[1][:-1]]
+    img_face = img[int(index[1]):int(index[3]),int(index[0]):int(index[2])]
+    cv2.imwrite('images/output_cv.jpg', img_face)
     size = (vertices[1].x-vertices[0].x, vertices[3].y-vertices[0].y)
 
     test.inpainting()
 
     template = Image.open("origin.jpg") 
     rgb_im = template.convert('RGB')
-    logo = Image.open("KakaoTalk_20200924_142813896.png")
+    logo = Image.open("mask/mask.png")
     resized_logo = logo.resize(size)
     rgb_im.paste(resized_logo, (vertices[0].x, vertices[0].y))
-    rgb_im.save("origin.jpg", "JPEG")
+    rgb_im.save("origin.jpg", "jpg")
     #rgb_im.show()
