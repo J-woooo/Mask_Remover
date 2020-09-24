@@ -6,8 +6,7 @@
 ---
 #### Face recognition using Google api
 ##### https://cloud.google.com/vision/docs/detecting-faces?hl=ko
-![ex_screenshot](./origin.png)
-![ex_screenshot](./detect.jpg)
+![ex_screenshot1](./origin.png) ![ex_screenshot2](./detect.jpg)
 ---
 #### Face inpainting
 ---
