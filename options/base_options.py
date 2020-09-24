@@ -12,33 +12,53 @@ class BaseOptions():
 
     def initialize(self, parser):
         # base define
-        parser.add_argument('--name', type=str, default='celeba_random', help='name of the experiment.')
-        parser.add_argument('--model', type=str, default='pluralistic', help='name of the model type. [pluralistic]')
+        parser.add_argument(
+            '--name', type=str, default='celeba_random', help='name of the experiment.')
+        parser.add_argument('--model', type=str, default='pluralistic',
+                            help='name of the model type. [pluralistic]')
         parser.add_argument('--mask_type', type=int, default=[3],
                             help='mask type, 0: center mask, 1:random regular mask, '
                             '2: random irregular mask. 3: external irregular mask. [0],[1,2],[1,2,3]')
-        parser.add_argument('--checkpoints_dir', type=str, default='./checkpoints', help='models are save here')
-        parser.add_argument('--which_iter', type=str, default='latest', help='which iterations to load')
-        parser.add_argument('--gpu_ids', type=str, default='0', help='gpu ids: e.g. 0, 1, 2 use -1 for CPU')
+        parser.add_argument('--checkpoints_dir', type=str,
+                            default='./checkpoints', help='models are save here')
+        parser.add_argument('--which_iter', type=str,
+                            default='latest', help='which iterations to load')
+        parser.add_argument('--gpu_ids', type=str, default='0',
+                            help='gpu ids: e.g. 0, 1, 2 use -1 for CPU')
 
         # data pattern define
-        parser.add_argument('--img_file', type=str, default='images', help='training and testing dataset')
-        parser.add_argument('--mask_file', type=str, default='mask', help='load test mask')
-        parser.add_argument('--loadSize', type=int, default=[266, 266], help='scale images to this size')
-        parser.add_argument('--fineSize', type=int, default=[256, 256], help='then crop to this size')
-        parser.add_argument('--resize_or_crop', type=str, default='resize_and_crop', help='scaling and cropping of images at load time [resize_and_crop|crop|]')
-        parser.add_argument('--no_flip', action='store_true', help='if specified, do not flip the image for data augmentation')
-        parser.add_argument('--no_rotation', action='store_true', help='if specified, do not rotation for data augmentation')
-        parser.add_argument('--no_augment', action='store_true', help='if specified, do not augment the image for data augmentation')
-        parser.add_argument('--batchSize', type=int, default=8, help='input batch size')
-        parser.add_argument('--nThreads', type=int, default=8, help='# threads for loading data')
-        parser.add_argument('--no_shuffle', action='store_true',help='if true, takes images serial')
+        parser.add_argument(
+            '--img_file', type=str, default='images', help='training and testing dataset')
+        parser.add_argument('--mask_file', type=str,
+                            default='mask', help='load test mask')
+        parser.add_argument('--loadSize', type=int,
+                            default=[266, 266], help='scale images to this size')
+        parser.add_argument('--fineSize', type=int,
+                            default=[256, 256], help='then crop to this size')
+        parser.add_argument('--resize_or_crop', type=str, default='resize_and_crop',
+                            help='scaling and cropping of images at load time [resize_and_crop|crop|]')
+        parser.add_argument('--no_flip', action='store_true',
+                            help='if specified, do not flip the image for data augmentation')
+        parser.add_argument('--no_rotation', action='store_true',
+                            help='if specified, do not rotation for data augmentation')
+        parser.add_argument('--no_augment', action='store_true',
+                            help='if specified, do not augment the image for data augmentation')
+        parser.add_argument('--batchSize', type=int,
+                            default=8, help='input batch size')
+        parser.add_argument('--nThreads', type=int, default=8,
+                            help='# threads for loading data')
+        parser.add_argument('--no_shuffle', action='store_true',
+                            help='if true, takes images serial')
 
         # display parameter define
-        parser.add_argument('--display_winsize', type=int, default=256, help='display window size')
-        parser.add_argument('--display_id', type=int, default=1, help='display id of the web')
-        parser.add_argument('--display_port', type=int, default=8097, help='visidom port of the web display')
-        parser.add_argument('--display_single_pane_ncols', type=int, default=0, help='if positive, display all images in a single visidom web panel')
+        parser.add_argument('--display_winsize', type=int,
+                            default=256, help='display window size')
+        parser.add_argument('--display_id', type=int,
+                            default=1, help='display id of the web')
+        parser.add_argument('--display_port', type=int,
+                            default=8097, help='visidom port of the web display')
+        parser.add_argument('--display_single_pane_ncols', type=int, default=0,
+                            help='if positive, display all images in a single visidom web panel')
 
         return parser
 
