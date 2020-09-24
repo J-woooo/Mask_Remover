@@ -29,3 +29,19 @@ def my_view(request):
     # Render list page with the documents and the form
     context = {'documents': documents, 'form': form, 'message': message}
     return render(request, 'list.html', context)
+
+def index(request):
+    return render(request, 'index.html')
+
+from  Mask_Remover_git.demo import *
+from  Mask_Remover_git.test import *
+from  Mask_Remover_git.detection_back import *
+from  Mask_Remover_git.detection_front import *
+from  Mask_Remover_git.detection_func import *
+from  Mask_Remover_git.make_mask import *
+from  Mask_Remover_git.prediction import *
+
+def mask_eraser(request):
+    if request.method == 'POST':
+        main()
+    return render(request, "list.html")
