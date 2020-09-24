@@ -17,3 +17,5 @@ def face_recovery():
     for i, data in enumerate(islice(dataset, opt.how_many)):
         model.set_input(data)
         model.test()
+
+    return './results/output_cv_out_0.png'

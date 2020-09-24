@@ -18,3 +18,4 @@ def combine(vertices, size):
     rgb_im.paste(resized_logo, (vertices[0].x, vertices[0].y))
     rgb_im.save("result.jpg", "JPEG")
     # rgb_im.show()
+    return './result.jpg'
