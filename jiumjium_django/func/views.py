@@ -44,4 +44,12 @@ from  Mask_Remover_git.prediction import *
 def mask_eraser(request):
     if request.method == 'POST':
         main()
-    return render(request, "list.html")
+    return render(request, "index.html")
+
+def download(request):
+    input_movie_path = './media/'
+    movie_name = [f for f in os.listdir(input_movie_path) if os.path.isfile(os.path.join(input_movie_path, f))]
+    response = HttpResponse(open(input_movie_path + movie_name[0], 'rb').read())
+    response['Content-Type'] = type="video/mp4"
+    response['Content-Disposition'] = 'attachment; filename= ' + movie_name[0]
+    return response
