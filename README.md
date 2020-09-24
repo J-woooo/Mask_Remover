@@ -6,7 +6,7 @@
 ---
 ### Face recognition using Google api
 ##### https://cloud.google.com/vision/docs/detecting-faces?hl=ko
-<img src="./origin.png" height="100px" width="300px"> <img src="./detect.jpg" height="100px" width="300px">
+<img src="./origin.png" height="300px" width="300px"> <img src="./detect.jpg" height="300px" width="300px">
 ---
 ### Face inpainting by Progressive GAN
 ---
