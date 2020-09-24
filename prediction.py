@@ -3,7 +3,8 @@ from dataloader import data_loader
 from model import create_model
 from itertools import islice
 
-if __name__=='__main__':
+
+def face_recovery():
     # get testing options
     opt = test_options.TestOptions().parse()
     # creat a dataset
